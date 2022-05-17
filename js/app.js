@@ -108,12 +108,35 @@ function makeHobbits() {
 function keepItSecretKeepItSafe() {
 	console.log('3: keepItSecretKeepItSafe')
 
+const mkRing = document.createElement('div');
+
+mkRing.setAttribute("id", "the-ring");
+
+mkRing.setAttribute("class",'magic-imbued-jewelry');
+
+const liS = document.querySelectorAll('li, .hobbits')
+const arr = Array.from(liS)
+for (const [index,liS] of arr.entries()){
+  console.log(index,liS)
+
+}
+
+
+arr[0].append(mkRing);
+
+
+
+
+
+
+}
+
+
 	// create a div with an id of `'the-ring'`
 
 	// give the div a class of `'magic-imbued-jewelry'`
 
 	// add the ring as a child of `Frodo`
-}
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 3 complete - Made the ring and gave it to Frodo".
@@ -124,7 +147,16 @@ function keepItSecretKeepItSafe() {
 
 function makeBaddies() {
 	console.log('4: makeBaddies')
+	const mordorUL = document.getElementById('Mordor');
+	const mkUl2 = document.createElement('ul');
+	mordorUL.append(mkUl2);
 
+	for(i=0; i<baddies.length; i++){
+		const mkLi2=document.createElement('li');
+		mkLi2.setAttribute("class","baddy");
+		mkLi2.innerHTML=baddies[i];
+		mkUl2.append(mkLi2);
+	}
 	// display an unordered list of baddies in Mordor
 
 	// give each of the baddies a class of "baddy"
