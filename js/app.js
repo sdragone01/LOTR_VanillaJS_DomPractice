@@ -24,6 +24,7 @@ function makeMiddleEarth() {
 	
 
 	// 1. create a section tag with an id of middle-earth
+const mkUl = document.createElement('ul');
 
 const selBody = document.querySelector('body');
 const  mkSec = document.createElement('section');
@@ -72,7 +73,21 @@ const mkH1=document.createElement('h1');
 // ============
 
 function makeHobbits() {
-	console.log('2: makeHobbits')
+	console.log('2: makeHobbits');
+	const shireUl =document.getElementById('The-Shire');
+	const mkUl = document.createElement('ul');
+	shireUl.append(mkUl);
+
+	for(i=0; i<hobbits.length;i++){
+	
+	const mkLi= document.createElement('li');
+		mkLi.setAttribute("class","hobbits");
+		mkLi.innerHTML=hobbits[i];
+		mkUl.append(mkLi);
+
+
+	}
+}
 
 	// display an `unordered list` of hobbits in the shire
 
@@ -81,7 +96,7 @@ function makeHobbits() {
 	// hint: create a 'ul' outside the loop into which to append the 'li's
 
 	// hint: get 'The-Shire' by using its id
-}
+
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 2 complete - Made the Hobbits".
