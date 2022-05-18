@@ -256,9 +256,9 @@ function forgeTheFellowShip() {
     const the_FellowShip = document.createElement('div');
     the_FellowShip.setAttribute('id', 'the-fellowship');
 
-     fellowshipMembers.forEach(function(taco){
-         alert(taco + " has joined the fellowship!")
-     })
+    //  fellowshipMembers.forEach(function(jamboy){
+    //      alert(jamboy + " has joined the fellowship!")
+    //  })
 
 
 
@@ -279,8 +279,16 @@ function forgeTheFellowShip() {
 
 function theBalrog() {
 	console.log('9: theBalrog')
+	const liS3 = document.querySelectorAll('aside, li')
+const arr3 = Array.from(liS3)
+for (const [index,liS3] of arr3.entries()){
+	arr3[1].innerHTML='Gandalf the White';
+	arr3[1].style.background="white";
+	arr3[1].style.border="10px solid grey";
+
 	// change the `'Gandalf'` text to `'Gandalf the White'`
 	// apply the following style to the element, make the // background 'white', add a grey border
+}
 }
 
 // COMMIT YOUR WORK
@@ -292,6 +300,7 @@ function theBalrog() {
 
 function hornOfGondor() {
 	console.log('10: hornOfGondor')
+	
 	// pop up an alert that the horn of gondor has been blown
 	// Boromir's been killed by the Uruk-hai!
 	// Remove `Boromir` from the Fellowship
