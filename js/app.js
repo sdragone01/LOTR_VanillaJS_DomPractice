@@ -300,12 +300,18 @@ for (const [index,liS3] of arr3.entries()){
 
 function hornOfGondor() {
 	console.log('10: hornOfGondor')
+	alert(" the horn of gondor has been blown");
+	const liS3 = document.querySelectorAll('aside, li')
+const arr3 = Array.from(liS3)
+for (const [index,liS3] of arr3.entries()){
+ console.log(arr3);
+ arr3[5].remove();
 	
 	// pop up an alert that the horn of gondor has been blown
 	// Boromir's been killed by the Uruk-hai!
 	// Remove `Boromir` from the Fellowship
 }
-
+}
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 10 complete - horn of gandor blew and Boromir is dead"
 
