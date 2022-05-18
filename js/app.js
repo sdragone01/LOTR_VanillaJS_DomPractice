@@ -173,6 +173,20 @@ function makeBaddies() {
 
 function makeBuddies() {
 	console.log('5: makeBuddies')
+	const mkAs = document.createElement('aside');
+	const mkUl3 = document.createElement('ul');
+	const rivenD= document.getElementById('Rivendell');
+	mkAs.append(mkUl3);
+	rivenD.append(mkAs);
+
+	for(i=0; i<buddies.length;i++){
+	
+		const mkLi3= document.createElement('li');
+			mkLi3.innerHTML=hobbits[i];
+			mkUl3.append(mkLi3);
+			rivenD.append(mkAs);
+	
+	}
 
 	// create an `aside` tag
 
