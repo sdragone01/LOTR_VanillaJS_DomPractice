@@ -117,7 +117,7 @@ mkRing.setAttribute("class",'magic-imbued-jewelry');
 const liS = document.querySelectorAll('li, .hobbits')
 const arr = Array.from(liS)
 for (const [index,liS] of arr.entries()){
-  console.log(index,liS)
+ 
 
 }
 
@@ -304,7 +304,7 @@ function hornOfGondor() {
 	const liS3 = document.querySelectorAll('aside, li')
 const arr3 = Array.from(liS3)
 for (const [index,liS3] of arr3.entries()){
- console.log(arr3);
+ 
  arr3[5].remove();
 	
 	// pop up an alert that the horn of gondor has been blown
@@ -321,9 +321,26 @@ for (const [index,liS3] of arr3.entries()){
 
 function itsDangerousToGoAlone() {
 	console.log('11: itsDangerousToGoAlone')
+	
+	const liS = document.querySelectorAll('#Mordor')
+	const arr4 = Array.from(liS)
+	for (const [index,liS] of arr4.entries()){
+		
+
+
+	const liS3 = document.querySelectorAll('aside,li')
+const arr3 = Array.from(liS3)
+for (const [index,liS3] of arr3.entries()){
+ 
+  arr4[0].append(arr3[5]);
+  arr4[0].append(arr3[6]);
+
+  const mountD = document.createElement('div');
+  mountD.setAttribute('id','mount-doom');
+  liS.append(mountD);
 	// take `Frodo` and `Sam` out of the fellowship and move // them to `Mordor`
 	// add a div with an id of `'mount-doom'` to `Mordor`
-}
+}}}
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 11 complete - Sam and Frodo are in Mordor and Mount Doom has been created"
