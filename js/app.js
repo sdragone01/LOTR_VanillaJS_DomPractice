@@ -204,6 +204,21 @@ function makeBuddies() {
 
 function leaveTheShire() {
 	console.log('6: leaveTheShire')
+const hobbitUhaul = document.querySelectorAll('li,.hobbits');
+
+const liS2 = document.querySelectorAll('li, .hobbits')
+const arr2 = Array.from(liS2)
+const rivenDel = document.getElementById('Rivendell');
+for (const [index,liS2] of arr2.entries()){
+	rivenDel.append(arr2[0]);
+	rivenDel.append(arr2[1]);
+	rivenDel.append(arr2[2]);
+	rivenDel.append(arr2[3]);
+
+}
+
+
+
 
 	// assemble the `hobbits` and move them to `rivendell`
 }
