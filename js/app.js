@@ -251,6 +251,18 @@ for (const [index,liS3] of arr3.entries()){
 
 function forgeTheFellowShip() {
 	console.log('8: forgeTheFellowShip')
+	const fellowshipMembers = hobbits.concat(buddies);
+    
+    const the_FellowShip = document.createElement('div');
+    the_FellowShip.setAttribute('id', 'the-fellowship');
+
+     fellowshipMembers.forEach(function(taco){
+         alert(taco + " has joined the fellowship!")
+     })
+
+
+
+	
 	// create a new div called `'the-fellowship'` within `rivendell`
 	// add each `hobbit` and `buddy` one at a time to `'the-fellowship'`
 	// after each character is added make an alert that they // have joined your party
