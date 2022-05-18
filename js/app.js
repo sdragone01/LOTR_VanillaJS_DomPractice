@@ -182,7 +182,7 @@ function makeBuddies() {
 	for(i=0; i<buddies.length;i++){
 	
 		const mkLi3= document.createElement('li');
-			mkLi3.innerHTML=hobbits[i];
+			mkLi3.innerHTML=buddies[i];
 			mkUl3.append(mkLi3);
 			rivenD.append(mkAs);
 	
@@ -233,7 +233,13 @@ for (const [index,liS2] of arr2.entries()){
 function beautifulStranger() {
 	console.log('7: beautifulStranger')
 
+	const liS3 = document.querySelectorAll('aside, li')
+const arr3 = Array.from(liS3)
+for (const [index,liS3] of arr3.entries()){
+  arr3[4].innerHTML='Aragon';
+
 	// change the `'Strider'` text to `'Aragorn'`
+}
 }
 
 // COMMIT YOUR WORK
